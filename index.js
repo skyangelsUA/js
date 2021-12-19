@@ -1,0 +1,4 @@
+for (; ;) {
+    
+    console.log(`BOOM`)
+}
