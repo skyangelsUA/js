@@ -40,6 +40,8 @@ const books = [
    
 ];
 
+const STORAGE_KEY = `books`;
+localStorage.setItem(STORAGE_KEY, JSON.stringify(books));
 
 const rootEl = document.querySelector(`#root`);
 
@@ -72,7 +74,8 @@ firstDivEl.append(headingEl, ulEl, btnEl);
 
 
 
-function renderList() { 
+function renderList() {
+    const books = JSON.parse(localStorage.getItem(STORAGE_KEY));
     const bookTitle = books.map(({title, id}) => {
     return `<li id=${id}><p>${title}</p>
     <button>edit</button>
@@ -104,20 +107,21 @@ function renderEdite() {
     const bookId = event.target.parentNode.id;
     console.log(`edit`);
 }
-function renderDelete() {
+function renderDelete(event) {
+    const deleteId = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    console.log(deleteId);
     const bookId = event.target.parentNode.id;
     console.log(`delete`);
 }
 
 
 function renderPreview(event) {
+    const books = JSON.parse(localStorage.getItem(STORAGE_KEY));
     const titleTC = event.target.textContent;
     console.log(titleTC);
     const titleObj = books.find((option) => option.title === titleTC);
     console.log(titleObj);
-
-    const markup = createPreviewMarkup(titleObj);
-    secondDivEl.insertAdjacentHTML(`beforeEnd`, markup);
+    secondDivEl.innerHTML = createPreviewMarkup(titleObj);
 
 }
 
