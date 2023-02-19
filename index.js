@@ -1,206 +1,210 @@
-const books = [
-    {
-    id: "1",
-    title: `Apple. Эволюция компьютера`,
-    author: `Владимир Невзоров`,
-    img: `https://bukva.ua/img/products/449/449532_200.jpg`,
-    plot: `Богато иллюстрированный хронологический справочник по истории компьютеров, в котором увлекательно 
-    и в структурированном виде изложена информация о создании и развитии техники Apple на фоне истории 
-    персональных компьютеров в целом.
-    В книге даны описания десятков наиболее значимых моделей устройств как Apple, так и других производителей, 
-    сопровождающиеся большим количеством оригинальных студийных фотографий.
-    Книга предназначена для широкого круга читателей, интересующихся историей электроники. 
-    Она также может послужить источником вдохновения для дизайнеров, маркетологов и предпринимателей.`,
-},
-    {
-    id: "2",
-    title: `Как объяснить ребенку информатику`,
-    author: `Кэрол Вордерман`,
-    img: `https://bukva.ua/img/products/480/480030_200.jpg`,
-    plot: `Иллюстрированная энциклопедия в формате инфографики о технических, социальных и культурных аспектах 
-    в информатике. Пошагово объясняет, как детям максимально эффективно использовать компьютеры и интернет-сервисы, 
-    оставаясь в безопасности. 
-    Книга рассказывает обо всем: от хранения данных до жизни в интернет-пространстве, 
-    от программирования до компьютерных атак. О том, как компьютеры функционируют, о современном программном 
-    обеспечении, устройстве Интернета и цифровом этикете. Все концепты - от хакера до биткоина - 
-    объясняются наглядно с помощью иллюстраций и схем.`,
-    },
- {
-    id: "3",
-    title: `Путь скрам-мастера. #ScrumMasterWay`,
-    author: `Зузана Шохова`,
-    img: `https://bukva.ua/img/products/480/480090_200.jpg`,
-    plot: `Эта книга поможет вам стать выдающимся скрам-мастером и добиться отличных результатов с вашей командой. 
-    Она иллюстрированная и легкая для восприятия - вы сможете прочитать ее за выходные, а пользоваться полученными 
-    знаниями будете в течение всей карьеры.
-    Основываясь на 15-летнем опыте, Зузана Шохова рассказывает, какие роли и обязанности есть у скрам-мастера, 
-    как ему решать повседневные задачи, какие компетенции нужны, чтобы стать выдающимся скрам-мастером, 
-    какими инструментами ему нужно пользоваться.`,
-  },
+// const books = [
+//     {
+//     id: "1",
+//     title: `Apple. Эволюция компьютера`,
+//     author: `Владимир Невзоров`,
+//     img: `https://bukva.ua/img/products/449/449532_200.jpg`,
+//     plot: `Богато иллюстрированный хронологический справочник по истории компьютеров, в котором увлекательно
+//     и в структурированном виде изложена информация о создании и развитии техники Apple на фоне истории
+//     персональных компьютеров в целом.
+//     В книге даны описания десятков наиболее значимых моделей устройств как Apple, так и других производителей,
+//     сопровождающиеся большим количеством оригинальных студийных фотографий.
+//     Книга предназначена для широкого круга читателей, интересующихся историей электроники.
+//     Она также может послужить источником вдохновения для дизайнеров, маркетологов и предпринимателей.`,
+// },
+//     {
+//     id: "2",
+//     title: `Как объяснить ребенку информатику`,
+//     author: `Кэрол Вордерман`,
+//     img: `https://bukva.ua/img/products/480/480030_200.jpg`,
+//     plot: `Иллюстрированная энциклопедия в формате инфографики о технических, социальных и культурных аспектах
+//     в информатике. Пошагово объясняет, как детям максимально эффективно использовать компьютеры и интернет-сервисы,
+//     оставаясь в безопасности.
+//     Книга рассказывает обо всем: от хранения данных до жизни в интернет-пространстве,
+//     от программирования до компьютерных атак. О том, как компьютеры функционируют, о современном программном
+//     обеспечении, устройстве Интернета и цифровом этикете. Все концепты - от хакера до биткоина -
+//     объясняются наглядно с помощью иллюстраций и схем.`,
+//     },
+//  {
+//     id: "3",
+//     title: `Путь скрам-мастера. #ScrumMasterWay`,
+//     author: `Зузана Шохова`,
+//     img: `https://bukva.ua/img/products/480/480090_200.jpg`,
+//     plot: `Эта книга поможет вам стать выдающимся скрам-мастером и добиться отличных результатов с вашей командой.
+//     Она иллюстрированная и легкая для восприятия - вы сможете прочитать ее за выходные, а пользоваться полученными
+//     знаниями будете в течение всей карьеры.
+//     Основываясь на 15-летнем опыте, Зузана Шохова рассказывает, какие роли и обязанности есть у скрам-мастера,
+//     как ему решать повседневные задачи, какие компетенции нужны, чтобы стать выдающимся скрам-мастером,
+//     какими инструментами ему нужно пользоваться.`,
+//   },
    
-];
+// ];
 
-const STORAGE_KEY = `books`;
-localStorage.setItem(STORAGE_KEY, JSON.stringify(books));
+// const STORAGE_KEY = `books`;
+// localStorage.setItem(STORAGE_KEY, JSON.stringify(books));
 
-const rootEl = document.querySelector(`#root`);
+// const rootEl = document.querySelector(`#root`);
 
-const firstDivEl = document.createElement(`div`);
-firstDivEl.classList.add(`firstDiv`);
+// const firstDivEl = document.createElement(`div`);
+// firstDivEl.classList.add(`firstDiv`);
 
-const secondDivEl = document.createElement(`div`);
-secondDivEl.classList.add(`secondDiv`);
+// const secondDivEl = document.createElement(`div`);
+// secondDivEl.classList.add(`secondDiv`);
 
-rootEl.append(firstDivEl, secondDivEl);
-
-
-
-
-
-
-
-const headingEl = document.createElement(`h1`);
-headingEl.textContent = `Library`;
-
-const ulEl = document.createElement(`ul`);
-const btnEl = document.createElement(`button`);
-btnEl.textContent = `Add`;
-btnEl.setAttribute(`type`, `button`);
-
-firstDivEl.append(headingEl, ulEl, btnEl);
+// rootEl.append(firstDivEl, secondDivEl);
 
 
 
 
 
 
-function renderList() {
-    const books = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    const bookTitle = books.map(({title, id}) => {
-    return `<li id=${id}><p>${title}</p>
-    <button>edit</button>
-    <button>delete</button>
-            </li>`
-    }).join(``);
-    ulEl.insertAdjacentHTML(`beforeend`, bookTitle);
-    const titleEl = document.querySelectorAll(`p`);
-    console.log(titleEl);
 
-    titleEl.forEach(element => {
-        element.addEventListener("click", renderPreview);
-    });
+// const headingEl = document.createElement(`h1`);
+// headingEl.textContent = `Library`;
 
-    const btnEdite = document.querySelectorAll(`.edit`);
-    const btnDelete = document.querySelectorAll(`.delete`);
+// const ulEl = document.createElement(`ul`);
+// const btnEl = document.createElement(`button`);
+// btnEl.textContent = `Add`;
+// btnEl.setAttribute(`type`, `button`);
 
-    btnEdite.forEach((element) => {
-        element.addEventListener(`click`, renderEdite);
-    });
-
-    btnDelete.forEach((element) => {
-        element.addEventListener(`click`, renderDelete);
-    });
-
-}
-renderList();
-function renderEdite() {
-    const bookId = event.target.parentNode.id;
-    console.log(`edit`);
-}
-function renderDelete(event) {
-    const deleteId = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    console.log(deleteId);
-    const bookId = event.target.parentNode.id;
-    console.log(`delete`);
-}
+// firstDivEl.append(headingEl, ulEl, btnEl);
 
 
-function renderPreview(event) {
-    const books = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    const titleTC = event.target.textContent;
-    console.log(titleTC);
-    const titleObj = books.find((option) => option.title === titleTC);
-    console.log(titleObj);
-    secondDivEl.innerHTML = createPreviewMarkup(titleObj);
-
-}
 
 
-function createPreviewMarkup({ title, author, img, plot }) {
+
+
+// function renderList() {
+//     const books = JSON.parse(localStorage.getItem(STORAGE_KEY));
+//     const bookTitle = books.map(({title, id}) => {
+//     return `<li id=${id}><p>${title}</p>
+//     <button>edit</button>
+//     <button>delete</button>
+//             </li>`
+//     }).join(``);
+//     ulEl.insertAdjacentHTML(`beforeend`, bookTitle);
+//     const titleEl = document.querySelectorAll(`p`);
+//     console.log(titleEl);
+
+//     titleEl.forEach(element => {
+//         element.addEventListener("click", renderPreview);
+//     });
+
+//     const btnEdite = document.querySelectorAll(`.edit`);
+//     const btnDelete = document.querySelectorAll(`.delete`);
+
+//     btnEdite.forEach((element) => {
+//         element.addEventListener(`click`, renderEdite);
+//     });
+
+//     btnDelete.forEach((element) => {
+//         element.addEventListener(`click`, renderDelete);
+//     });
+
+// }
+// renderList();
+// function renderEdite() {
+//     const bookId = event.target.parentNode.id;
+//     console.log(`edit`);
+// }
+// function renderDelete(event) {
+//     const deleteId = JSON.parse(localStorage.getItem(STORAGE_KEY));
+//     console.log(deleteId);
+//     const bookId = event.target.parentNode.id;
+//     console.log(`delete`);
+// }
+
+
+// function renderPreview(event) {
+//     const books = JSON.parse(localStorage.getItem(STORAGE_KEY));
+//     const titleTC = event.target.textContent;
+//     console.log(titleTC);
+//     const titleObj = books.find((option) => option.title === titleTC);
+//     console.log(titleObj);
+//     secondDivEl.innerHTML = createPreviewMarkup(titleObj);
+
+// }
+
+
+// function createPreviewMarkup({ title, author, img, plot }) {
    
-    const oneBook = `<div>
-    <h2>${title}</h2>
-    <p>${author}</p>
-    <img src="${img}" alt="picture" />
-    <p>${plot}</p>
-    </div>`;
+//     const oneBook = `<div>
+//     <h2>${title}</h2>
+//     <p>${author}</p>
+//     <img src="${img}" alt="picture" />
+//     <p>${plot}</p>
+//     </div>`;
 
-    return oneBook;
+//     return oneBook;
     
+// }
+
+
+
+
+
+
+
+
+// import flatpickr from 'flatpickr';
+// import 'flatpickr/dist/flatpickr.min.css';
+// import { Notify } from 'notiflix/build/notiflix-notify-aio';
+// import { convertMs } from './helpers/convertMs';
+// import { addLeadingZero } from './helpers/addLeadingZero';
+
+// const calendarInput = document.querySelector('#datetime-picker');
+// const buttonStart = document.querySelector('button');
+// const dataDays = document.querySelector('[data-days]');
+// const dataHours = document.querySelector('[data-hours]');
+// const dataMinutes = document.querySelector('[data-minutes]');
+// const dataSeconds = document.querySelector('[data-seconds]');
+
+// buttonStart.setAttribute('disabled', true);
+// const options = {
+//   enableTime: true,
+//   time_24hr: true,
+//   defaultDate: new Date(),
+//   minuteIncrement: 1,
+//   onClose(selectedDates) {
+//     buttonStart.removeAttribute('disabled');
+//     if (selectedDates[0] < Date.now()) {
+//       Notify.failure('Please choose a date in the future');
+//       buttonStart.setAttribute('disabled', true);
+//     }
+//     buttonStart.addEventListener('click', () => {
+//       const deadline = selectedDates[0].getTime();
+//       let timerId = null;
+//       function countDownTimer() {
+//         const dateDifference = convertMs(deadline - Date.now());
+//         const { days, hours, minutes, seconds } = dateDifference;
+//         if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+//           clearInterval(timerId);
+//           buttonStart.setAttribute('disabled', false);
+//           calendarInput.setAttribute('disabled', false);
+//         }
+//         const timerDays = addLeadingZero(String(days));
+//         const timerHours = addLeadingZero(String(hours));
+//         const timerMinutes = addLeadingZero(String(minutes));
+//         const timerSeconds = addLeadingZero(String(seconds));
+//         dataDays.innerHTML = timerDays;
+//         dataHours.innerHTML = timerHours;
+//         dataMinutes.innerHTML = timerMinutes;
+//         dataSeconds.innerHTML = timerSeconds;
+//       }
+//       countDownTimer();
+//       timerId = setInterval(countDownTimer, 1000);
+//     });
+//   },
+// };
+// const fp = flatpickr(calendarInput, options);
+
+
+function reverse (str) {
+
+  return str.split('').reverse().join('');
+
 }
 
+ 
 
-
-
-
-
-
-
-import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { convertMs } from './helpers/convertMs';
-import { addLeadingZero } from './helpers/addLeadingZero';
-
-const calendarInput = document.querySelector('#datetime-picker');
-const buttonStart = document.querySelector('button');
-const dataDays = document.querySelector('[data-days]');
-const dataHours = document.querySelector('[data-hours]');
-const dataMinutes = document.querySelector('[data-minutes]');
-const dataSeconds = document.querySelector('[data-seconds]');
-
-buttonStart.setAttribute('disabled', true);
-const options = {
-  enableTime: true,
-  time_24hr: true,
-  defaultDate: new Date(),
-  minuteIncrement: 1,
-  onClose(selectedDates) {
-    buttonStart.removeAttribute('disabled');
-    if (selectedDates[0] < Date.now()) {
-      Notify.failure('Please choose a date in the future');
-      buttonStart.setAttribute('disabled', true);
-    }
-    buttonStart.addEventListener('click', () => {
-      const deadline = selectedDates[0].getTime();
-      let timerId = null;
-      function countDownTimer() {
-        const dateDifference = convertMs(deadline - Date.now());
-        const { days, hours, minutes, seconds } = dateDifference;
-        if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
-          clearInterval(timerId);
-          buttonStart.setAttribute('disabled', false);
-          calendarInput.setAttribute('disabled', false);
-        }
-        const timerDays = addLeadingZero(String(days));
-        const timerHours = addLeadingZero(String(hours));
-        const timerMinutes = addLeadingZero(String(minutes));
-        const timerSeconds = addLeadingZero(String(seconds));
-        dataDays.innerHTML = timerDays;
-        dataHours.innerHTML = timerHours;
-        dataMinutes.innerHTML = timerMinutes;
-        dataSeconds.innerHTML = timerSeconds;
-      }
-      countDownTimer();
-      timerId = setInterval(countDownTimer, 1000);
-    });
-  },
-};
-const fp = flatpickr(calendarInput, options);
-
-
-
-
-
-
-
+alert(reverse('Привет мир, как дела!?'));
